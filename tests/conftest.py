@@ -9,8 +9,9 @@ import requests
 
 @pytest.fixture(scope="session") # Session-scoped fixture
 def api_base_url():
-    # This can later be read from env/CI vars
-    return "https://api.example.com"
+    # Using ReqRes.in - a real, free API for testing
+    # This can later be read from env/CI vars for different environments
+    return "https://reqres.in/api"
 
 @pytest.fixture(scope="session")
 def api_client(api_base_url):
@@ -22,3 +23,7 @@ def api_client(api_base_url):
     })
     session.base_url = api_base_url
     return session
+
+@pytest.fixture
+def user_data():
+    return {"name": "Mike", "role": "QA Engineer"}
