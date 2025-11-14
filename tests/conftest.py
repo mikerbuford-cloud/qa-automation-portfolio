@@ -30,7 +30,6 @@ def user_data():
 
 
 
-# tests/conftest.py
 
 
 # ---- Day-2 auth demo: tiny fake client + tokens ----
