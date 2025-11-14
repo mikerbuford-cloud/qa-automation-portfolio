@@ -4,7 +4,7 @@ It’s a function that prepares data, state, or resources that your test needs b
 
 Instead of repeating setup logic (like connecting to a database, creating test users, or loading config), you put it in a fixture once, then reuse it across multiple tests.
 
-Fixtures gives you access to Automate the follwoing process
+Fixtures gives you access to Automate the following process
     1. Set something up (e.g., create a user, connect to DB, open browser).
     2. Run your test.
     3. Tear it down (e.g., delete user, close DB, quit browser).
